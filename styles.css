@@ -287,7 +287,7 @@ font-family: 'Roboto', sans-serif; */
     
     .wrapper {
         margin: 0 auto;
-        max-width: 1400px;
+        max-width: 1200px;
         width: 90%;
     }
     
@@ -298,6 +298,12 @@ font-family: 'Roboto', sans-serif; */
         font-family: 'East Sea Dokdo', cursive;
         margin: 0;
         padding: 0;
+    }
+    
+    h2 {
+        font-size: 7.5rem;
+        line-height: 36px;
+        padding-bottom: 20px;
     }
     
     ul {
@@ -330,6 +336,7 @@ font-family: 'Roboto', sans-serif; */
         font-size: 2rem;
         line-height: 29px;
         letter-spacing: 0.2px;
+        margin-top: 0;
     }
     
     .topNav ul li {
@@ -345,15 +352,84 @@ font-family: 'Roboto', sans-serif; */
     
     .blog {
         background-color: #FFE9E9;
+        padding: 70px 0 110px 0;
     }
     
     .blogImgContainer {
         float: left;
         width: calc(30% - 40px);
-        margin-right: 40px;
+        margin: 45px 40px 0 0;
     }
     
     .blogTxtContainer {
         width: calc(70% - 40px);
         float: left;
+    }
+    
+    .readMore {
+        font-size: 4.5rem;
+        line-height: 29px;
+        background-color: #0178A5;
+        padding: 0 15px;
+        color: white;
+    }
+    /* gallery */
+    
+    .gallery {
+        background-color: #F7DAE8;
+        text-align: center;
+        padding: 70px 0 110px 0;
+    }
+    
+    .gallery li {
+        width: calc((100% / 3) - 40px);
+        float: left;
+        margin-right: 40px;
+    }
+    
+    .gallery h2 {
+        padding-bottom: 40px;
+    }
+    /* icon nav */
+    
+    .iconNav {
+        background-color: #FFE9E9;
+        text-align: center;
+        padding: 70px 0 70px 0;
+    }
+    
+    .iconNav i {
+        font-size: 6rem;
+        color: #0178A5;
+        width: calc((100% / 3) - 80px);
+        margin-right: 40px;
+    }
+    
+    .headings h3 {
+        display: inline-block;
+        font-size: 5.5rem;
+        width: calc((100% / 3) - 80px);
+        margin-right: 40px;
+    }
+    /* info section */
+    
+    .info {
+        background-color: #F7DAE8;
+    }
+    
+    .rightTxtContainer,
+    .rightImgContainer {
+        width: 50%;
+        float: left;
+    }
+    
+    .leftTxtContainer,
+    .leftImgContainer {
+        width: 50%;
+        float: right;
+    }
+    
+    .rightTxtContainer,
+    .leftTxtContainer {
+        padding: 50px 40px 40px 0;
     }
