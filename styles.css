@@ -302,7 +302,7 @@ font-family: 'Roboto', sans-serif; */
     
     h2 {
         font-size: 7.5rem;
-        line-height: 36px;
+        line-height: 50px;
         padding-bottom: 20px;
     }
     
@@ -315,6 +315,7 @@ font-family: 'Roboto', sans-serif; */
     a {
         text-decoration: none;
         color: #201e21;
+        padding: 5px;
     }
     
     h1 {
@@ -351,10 +352,19 @@ font-family: 'Roboto', sans-serif; */
     
     .topNav i {
         position: absolute;
+        font-size: 6rem;
         right: 5px;
-        top: 5px;
+        top: 15px;
         color: white;
-        display: none;
+        visibility: hidden;
+    }
+    
+    .topNav a:hover,
+    .topNav a:focus,
+    .bottomNav a:hover,
+    .bottomNav a:focus {
+        background-color: #0178A5;
+        color: white;
     }
     
     h1 {
@@ -385,6 +395,11 @@ font-family: 'Roboto', sans-serif; */
         padding: 0 15px;
         color: white;
     }
+    
+    .blog .readMore:hover,
+    .blog .readMore:focus {
+        background-color: #A7059B;
+    }
     /* gallery */
     
     .gallery {
@@ -397,6 +412,10 @@ font-family: 'Roboto', sans-serif; */
         width: calc((100% / 3) - 40px);
         float: left;
         margin-right: 40px;
+    }
+    
+    .gallery li:last-child {
+        margin-right: 0;
     }
     
     .gallery h2 {
@@ -417,14 +436,24 @@ font-family: 'Roboto', sans-serif; */
         margin-right: 40px;
     }
     
-    h3 {
-        font-size: 5.5rem;
+    .iconNav i:hover,
+    .iconNav i:focus {
+        color: #A7059B;
     }
     
-    .headings h3 {
-        display: inline-block;
-        width: calc((100% / 3) - 80px);
-        margin-right: 40px;
+    h3 {
+        font-size: 5.5rem;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .icon {
+        width: calc(100% / 3);
+        float: left;
+    }
+    
+    .icon h3 {
+        margin-top: 20px;
     }
     /* info section */
     
@@ -457,12 +486,13 @@ font-family: 'Roboto', sans-serif; */
         padding-bottom: 25px;
     }
     
-    .info h2 {
-        line-height: 50px;
-    }
-    
     .info .readMore {
         background-color: #A7059B;
+    }
+    
+    .info .readMore:hover,
+    .info .readMore:focus {
+        background-color: #0178A5;
     }
     /* bottom Nav */
     
@@ -514,6 +544,7 @@ font-family: 'Roboto', sans-serif; */
     input {
         height: 35px;
         border-style: none;
+        margin-bottom: 10px;
     }
     
     input[type=text] {
@@ -544,7 +575,7 @@ font-family: 'Roboto', sans-serif; */
     }
     
     footer a {
-        color: white;
+        color: #A7059B;
     }
     /* media queries */
     /* Portrait tablet and small desktops */
@@ -584,10 +615,68 @@ font-family: 'Roboto', sans-serif; */
         }
     }
     
-    @media (max-width: 940px) {}
+    @media (max-width: 940px) {
+        h1 {
+            width: 500px;
+        }
+        .icon {
+            width: 100%;
+            float: none;
+            padding: 20px 0;
+        }
+        .navlinks,
+        .subscribe,
+        .contact {
+            width: 100%;
+            text-align: center;
+        }
+        .navlinks {
+            margin-bottom: 30px;
+        }
+        .navlinks li {
+            float: left;
+            width: calc(100% / 4);
+        }
+        .contact {
+            float: none;
+        }
+        .bottomNav {
+            padding-top: 30px;
+        }
+        input[type=text] {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+        input[type=submit] {
+            width: 50%;
+            height: 50px;
+            font-size: 4rem;
+            margin-bottom: 50px;
+        }
+    }
     /* Landscape phone to portrait tablet */
     
-    @media (max-width: 768px) {}
+    @media (max-width: 768px) {
+        .topNav ul {
+            visibility: hidden;
+        }
+        .topNav i {
+            visibility: visible;
+        }
+        .gallery ul li:last-child {
+            display: none;
+        }
+        .gallery ul li:nth-child(2) {
+            margin-right: 0;
+        }
+        .gallery ul li:first-child {
+            margin-right: 20px;
+        }
+        .gallery ul li {
+            width: calc((100% / 2) - 20px);
+        }
+    }
     /* Landscape phones and down */
     
     @media (max-width: 480px) {}
